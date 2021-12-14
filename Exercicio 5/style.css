@@ -84,7 +84,7 @@ body {
     color: rgb(133,136,166);
     text-decoration:none;
     font-weight:600;
-    margin:99px
+    text-align:center;
 }
 @media (min-width:700px){
     body {
