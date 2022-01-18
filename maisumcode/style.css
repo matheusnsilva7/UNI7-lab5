@@ -1,0 +1,331 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:serif;
+    box-sizing: border-box;
+}
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 5px;
+    align-items: center;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    position:relative;
+    z-index: 2;
+    
+}
+h1 a {
+    text-decoration: none;
+    color:white;
+}
+h1::before{
+    content:"";
+    width: 50px;
+    height: 30px;
+    background-color:blue;
+    position: absolute;
+    bottom:0;
+    transform: skew(40deg);
+    z-index: -1;
+    right:30px;
+}
+h1::after{
+    content:"";
+    width: 50px;
+    height: 30px;
+    background-color:aqua;
+    position: absolute;
+    bottom:0;
+    transform: skew(-40deg);
+    z-index: -1;
+    left:30px
+}
+nav ul{
+    display:flex;
+    gap:20px;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration:none;
+    color:black
+}
+nav ul li a:hover{
+    color:blue
+}
+.content{
+    background-color: aqua;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 30px 5px;
+    gap:30px;
+    text-align:center;
+    justify-content: center;
+    height:300px
+}
+.content h2,.content p {
+    color:black;
+    font-family:serif
+}
+
+.content h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight:800;
+    text-decoration: none;
+}
+.content p {
+    font-size: 13px;
+}
+.content a {
+    display:inline-block;
+    text-decoration: none;
+    padding:10px 20px;
+    color:black;
+    background-color:white;
+    font-size:10px
+}
+.content a:hover{
+    background-color:#f7f7f7
+}
+.programaçao{
+    background-color:#f7f7f7;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px
+}
+.programaçao h2{
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight:800;
+    text-decoration: none;
+    font-family:serif;
+    text-align:center;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.organizar{
+    gap:20px;
+    display:flex;
+    flex-direction: column;
+
+}
+.esconder{
+    display: none;
+}
+.html a,.js a,.Css a,.php a,.python a{
+    background-color: rgb(229,76,33);
+    padding: 15px;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    position:relative;
+    height:125px;
+    width: 260px
+}
+.html a h3,.Css a h3,.js a h3{
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight:800;
+    text-decoration: none;
+    font-family:serif;
+}
+.Css a {
+    background-color: rgb(38 77 228);
+}
+.js a{
+    background-color: rgb(247 224 24);
+}
+.php a{
+    background-color:rgb(120 124 180);
+}
+.python a {
+    background: linear-gradient(#3672a4, #fed74b);
+}
+.mais{
+    display: flex;
+    justify-content: right;
+    padding-bottom: 20px;
+    padding-right:15px;
+    text-decoration:none;
+    color:black;
+    text-transform: uppercase;
+    font-size:14px
+}
+
+.background{
+    width:100%;
+    height: 100%;
+    background-color: #10162f;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index: -1;
+    transition:1s
+}
+.html:hover,.Css:hover,.js:hover,.php:hover,.python:hover,.background{
+    transform: translate(3px,-5px);
+    top:10px;
+    right:8px
+}
+.perguntas{
+    background-color:rgb(78, 78, 78);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    padding:40px 0;
+    gap:20px
+}
+.perguntas div input{
+    width:250px
+}
+.perguntas div textarea{
+    width:280px
+}
+.perguntas div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    gap:10px;
+}
+.perguntas h3{
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight:800;
+    text-decoration: none;
+    font-family:serif;
+}
+button:hover{
+    color:rgb(77, 77, 77);
+    background-color:white
+}
+input, textarea,button{
+    background-color:rgb(77, 77, 77);
+    color:white;
+    border:2px solid white;
+    padding:5px
+}
+button{
+    cursor:pointer;
+    margin-top:10px
+}
+footer{
+    background-color:aqua;
+    text-align:center
+}
+footer ul{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:20px;
+    gap:15px
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul li a{
+    text-decoration:none;
+    color:black;
+}
+footer ul li a:hover{
+    color:blue;
+}
+@media only screen and (min-width: 700px) {
+    header{
+        display:flex;
+        justify-content:space-between;
+        flex-direction:row;
+        padding: 20px 200px;
+        background-color:white
+    }
+    nav ul{
+        gap:30px
+    }
+    .html a,.js a,.Css a,.php a,.python a{
+        height:150px;
+        width:500px
+    }
+}
+@media only screen and (min-width: 1100px) {
+    header{
+        display:flex;
+        justify-content:space-between;
+        flex-direction:row;
+        padding: 20px 200px;
+        background-color:white
+    }
+    nav ul{
+        gap:30px
+    }
+    .content{
+        height:450px;
+        gap:70px
+    }
+    .content h2{
+        font-size:45px;
+        padding-bottom: 30px;
+        letter-spacing: 5px;
+    }
+    .texto-principal{
+        gap:30px
+    }
+    .programaçao h2 {
+        padding:30px
+    }
+    .content a{
+        padding:15px 20px;
+        font-size:15px
+    }
+    .esconder{
+        display:block
+    }
+    .organizar{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 0px 200px 50px 200px
+    }
+    .grid-col-span-2{
+        grid-column: span 2;
+    }
+    .grid-row-span-2{
+        grid-row: span 2;
+    }
+    .html a,.js a,.Css a,.php a,.python a{
+        height:150px;
+        width:100%
+    }
+    .js a{
+        height:100%
+    }
+    .programaçao .mais{
+        display:none
+    }
+    .perguntas div input{
+        width:420px
+    }
+    .perguntas div textarea{
+        width:420px
+    }
+    footer ul{
+        gap:120px
+    }
+}
