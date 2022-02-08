@@ -1,0 +1,123 @@
+* {
+    margin: 0 ; 
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box
+}
+body , .fix{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+section{
+    background-color:#E5E5E5;
+    position:relative;
+    width:400px;
+    height:800px;
+    margin:20px
+}
+svg {
+    cursor:pointer
+}
+section::after {
+    content: "";
+    background-color: #FFBB12;
+    width: 400px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+}
+h1{
+    position:relative;
+    font-size: 36px;
+    color: #464237;
+    z-index: 2
+}
+h1::after {
+    content: "";
+    background-color: #FFBB12;
+    width: 26px;
+    height: 26px;
+    border-radius:6px;
+    position: absolute;
+    left: -5px;
+    z-index:-1
+}
+.menu{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items: center;
+}
+.cadastro {
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:0px 20px;
+    border-radius:4px;
+    padding:20px
+}
+label{
+    color: #211F1C;
+}
+input , select{
+    width:320px;
+    height:44px;
+    margin:15px 0px;
+    z-index:32;
+    background: #F9F8F6;
+    border: 1px solid #E3E0DB;
+    border-radius: 5px;
+}
+input:focus{
+    box-shadow: 0px 0px  5px #FFEEA9;
+    outline-color:#FFBB12;
+    background: #FFFFFF;
+}
+select:focus{
+    box-shadow: 0px 0px  5px #FFEEA9;
+    outline-color:#FFBB12;
+}
+input[name=cep], input[name=numero]{
+    width:150px;
+}
+.espaco{
+    margin-right: 20px;
+}
+.dividir{
+    display:flex;
+    flex-wrap: wrap;
+}
+.dividir label{
+    width:150px
+}
+input[name="concordo"]{
+    width:20px;
+    height:20px;
+}
+.fix{
+    gap:20px
+}
+button{
+    padding:15px;
+    background: #FFBB12;
+    border-radius: 5px;
+    border:none;
+    color:#7A4B02;
+    cursor:pointer
+}
+.desaparecer{
+    position:absolute;
+    top: 340px;
+    left:330px;
+}
+.selecionar{
+    background-color:#F9F8F6;
+    position:absolute;
+    top:620px;
+    left:320px;
+    width:35px;
+    height:10px;
+    pointer-events: none;
+}
