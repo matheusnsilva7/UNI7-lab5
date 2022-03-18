@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Indie Flower', cursive;
+    box-sizing:border-box;
+}
+body{
+    background:linear-gradient(-45deg,rgb(133, 245, 253),rgb(97, 240, 250),rgb(133, 176, 255));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    height:100vh;
+}
+h1{
+    text-align:center;
+    font-size:46px;
+    padding:15px 0px;
+}
+.texto-sobreposicao{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    background: rgba(194, 194, 194,0.5);
+    width:100%;
+    height:100%;
+    z-index:3;
+    top:0;
+    color:white;
+    cursor:pointer
+}
+.texto-sobreposicao.aparecer{
+    display:flex;
+    flex-direction: column;
+    animation:sobreposicao 500ms forwards;
+}
+@keyframes sobreposicao {
+    0%{
+        background: rgba(0,0,0,0);
+        font-size:0;
+    }
+    100%{
+        background: rgba(0,0,0,0.6);
+        font-size: 70px;
+    }
+}
+.texto-sobreposiçao-texto{
+    font-size:30px;
+    font-weight:600
+}
+.jogo{
+    width:1000px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap:20px;
+}
+.lugar-informaçao-jogo{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    grid-column: 1/-1;
+}
+.informaçao-jogo{
+    font-size:30px;
+    font-weight:600
+}
+.carta{
+    position:relative;
+    height:200px;
+    width:150px;
+    border-radius: 20px;
+    margin:auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    
+}
+.carta:hover{
+    transform: translateY(-15px);
+}
+
+.verso-carta{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    background-color:rgb(71, 71, 71);
+    box-shadow:0px 0px 0px 10px rgb(255, 255, 255) inset;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: transform 500ms ease-in-out;
+    z-index: 2;
+}
+.ouros{
+    width:40px;
+    height:40px;
+    background-color:white;
+    transform: rotate(45deg);
+}
+.frente-carta{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(255, 180, 81);
+    transform: rotateY(180deg);
+    transition: transform 500ms ease-in-out;
+}
+.carta.visivel .verso-carta{
+    transform:rotateY(-180deg);
+}
+.carta.visivel .frente-carta{
+    transform:rotateY(0deg);
+}
+svg{
+    transform: scale(6);
+    fill:white;
+}
