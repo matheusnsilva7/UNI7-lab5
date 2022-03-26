@@ -1,0 +1,60 @@
+.texto-grande {
+  line-height: 1.12;
+  font-size: 64px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.texto-pequeno {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.texto-pequeno-r {
+ font-weight: 400;
+}
+
+.texto-medio {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.texto-medio-r {
+  font-weight: 400;
+}
+
+.texto-medio-m {
+  font-weight: 500;
+}
+.texto-decorativo {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .texto-grande {
+    font-size: 42px;
+  }
+
+  .texto-medio {
+    font-size: 18px;
+  }
+
+  .texto-decorativo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .texto-grande {
+    font-size: 24px;
+  }
+
+  .texto-medio {
+    font-size: 16px;
+  }
+}

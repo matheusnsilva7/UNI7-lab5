@@ -1,0 +1,95 @@
+.seguros-bg {
+  background: #111111 url('../../img/dec/bottom-left.svg') no-repeat bottom 30px left 15px;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.seguros-bg  h2 {
+  padding-bottom: 104px;
+  margin-left: 80px;
+}
+.seguro-card-header, 
+.seguro-principal {
+  display: flex;
+}
+
+.seguro-card-header { 
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.seguro-principal {
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 122px;
+}
+
+.seguro-card {
+  width: 560px;
+  box-sizing: border-box;
+  background-color: #000;
+  border-radius: 4px;
+  padding: 16px 16px 16px 32px;
+  max-height: 396px;
+}
+
+.seguro-card.card-grande {
+  max-height: 484px;
+}
+
+.seguro-card:first-child { 
+  margin-right: 40px;
+}
+
+.seguro-card-header p {
+ text-align: right;
+}
+
+.cor-ouro {
+  color: #ffbb00;
+}
+
+.cor-prata {
+  color: #9c9c9c;
+}
+
+.seguro-card-conteudo li + li{
+  padding-top: 20px;
+}
+
+.seguro-card-conteudo li::before {
+  content: "";
+  background: url("../../img/icones/lista.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  margin-right: 16px;
+}
+
+.seguro-card-conteudo ul {
+  padding-bottom: 32px;
+}
+
+/**Media query*/
+@media screen and (max-width: 1200px) {
+  .seguro-principal {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .seguro-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .seguro-principal {
+    flex-direction: column;
+  }
+
+  .seguro-card:first-child { 
+    margin: 20px 0px;
+  }
+}

@@ -1,0 +1,75 @@
+.bicicletas {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 120px;
+}
+
+.bicicletas-container {
+  display: flex;
+  gap: 20px 40px;
+  max-width: 1400px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  
+}
+
+.bicicletas-container .bicicletas-item {
+  min-width: 360px;
+}
+
+.bicicletas h2 {
+  padding-bottom: 40px;
+  padding-top: 116px;
+}
+
+.bicicletas-container .bicicletas-item img {
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.bicicletas-container .bicicletas-item h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  font-size: 32px;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.bicicletas-container .bicicletas-item h3:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+  background: #ffbb00;
+}
+
+.bicicletas-container .bicicletas-item:hover h3:before {
+  width: 24px;
+}
+
+.bicicletas-container .bicicletas-item p {
+  margin-left: 20px;
+}
+
+.bicicletas-descricao p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #595959;
+}
+
+/**Media query*/
+@media screen and (max-width: 800px) {
+  .bicicletas h2 {
+    font-size: 42px;
+  }
+  .bicicletas-container {
+    gap: 12px 24px;
+  }
+}
