@@ -1,0 +1,32 @@
+nav{
+    width:1000px;
+    margin:auto;
+    padding:20px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div{
+  display:flex;
+  gap:20px;
+  align-items: center;
+}
+nav div .logo{
+    height:30px;
+    width:30px;
+    border: 3px solid #444;
+}
+nav div h1{
+    font-size: 20px;
+}
+nav p {
+    padding-right:50px
+}
+.btnFechar{
+    background: linear-gradient(to top left, #ff2f63, #ff585f);
+    border:none;
+    cursor: pointer;
+}
+.btnFechar:hover{
+    background: linear-gradient(to top left, #ff1d56, #fc2b35);;
+}

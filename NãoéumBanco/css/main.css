@@ -1,0 +1,100 @@
+main{
+    width:900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,430px);
+    gap:15px
+}
+h2{
+    padding-left: 40px;
+}
+span{
+    text-align: right;
+    font-size:40px;
+    padding-right: 40px;
+}
+.saldo{
+    grid-column: span 2;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Transferir{
+    background: linear-gradient(to top left, #39b385, #9be15d);;
+    display:grid;
+    grid-template-columns: 130px 130px 40px;
+    text-align: center;
+    gap:10px;
+}
+.Transferir h3{
+    grid-column: span 3;
+}
+.Transferir input{
+    width:100%;
+}
+.Transferir input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.Transferir button{
+    width:100%;
+}
+.solicitarEmprestimo{
+    background: linear-gradient(to top left, #ffb003, #ffcb03);
+    display:grid;
+    grid-template-columns: 200px 100px;
+    text-align: center;
+    gap:10px;
+}
+.solicitarEmprestimo h3{
+    grid-column: span 2;
+}
+.solicitarEmprestimo input{
+    width:100%;
+}
+.solicitarEmprestimo input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.solicitarEmprestimo button{
+    width:100%
+}
+.cor{
+    background-color: rgba(255, 255, 255, 0.4);
+    border:none;
+}
+.operaçoes{
+    border-radius: 16px;
+    padding: 28px 42px;
+}
+.movimentos{
+    grid-column: span 2;
+    overflow: scroll;
+    background-color:white;
+    height: 300px;
+}
+.movimentosLinha{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding:20px 50px;
+}
+.movimentosNumero{
+    border-radius: 20px;
+    padding:5px;
+    font-size: 15px;
+}
+.depositou{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+
+}
+
+.retirou {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.btnEmprestimo , .btnTransferir{
+    cursor: pointer;
+}
+.btnEmprestimo:hover , .btnTransferir:hover{
+    background-color: white;
+}

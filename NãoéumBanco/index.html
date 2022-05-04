@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não é um Banco</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menuPrincipal">
+        <div class="logo"></div>
+        <h1>Não é um Banco</h1>
+            <p>Faça login para começar</p>
+        <form class="login">
+            <input type="text" placeholder="usuário" class="loginarea inputUsuario"/>
+            <input type="password" placeholder="Senha" maxlength="4" class="loginarea inputSenha"/>
+            <button class="loginarea  btnUsuario entrar">&rarr;</button>
+        </form>
+    </div>
+    <div class="conta fechar">
+        <nav>
+            <div>
+            <div class="logo"></div>
+                <h1>Não é um Banco</h1>
+            </div>
+            <p class="bemVindo">Bem vindo</p>
+            <button class="btnFechar loginarea">Fechar</button>
+        </nav>
+        <main>
+            <div class="saldo">
+                <h2>Saldo atual</h2>
+                <span>R$1000</span>
+            </div>
+            <div class="Transferir operaçoes">
+                <h3>Transferir dinheiro</h3>
+                <label for="transferir">Transferir para</label>
+                <label for="valor">valor</label><br>
+                <input type="text" id="transferir" class="loginarea cor inputTransferir"/>
+                <input type="number" id="valor" class="loginarea cor inputValor"/>
+                <button class="loginarea btnTransferir">&rarr;</button>
+            </div>
+            <div class="solicitarEmprestimo operaçoes">
+                <h3>Solicitar empréstimo</h3>
+                <label for="emprestimo">Valor</label><br>
+                <input type="number" id="emprestimo" class="loginarea cor inputEmprestimo"/>
+                <button class="loginarea btnEmprestimo">&rarr;</button>
+            </div>
+            <div class="movimentos operaçoes">
+                <div class="movimentosLinha depositou">
+                  <div class="movimentosNumero">2 depositou</div>
+                  <div class="movimentosValor">R$4 000</div>
+                </div>
+                <div class="movimentosLinha retirou">
+                  <div class="movimentosNumero ">1 retirou</div>
+                  <div class="movimentosValor">R$-378</div>
+                </div>
+              </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
