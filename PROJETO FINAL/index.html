@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Projeto Final</title>
+</head>
+<body>
+    <header id="menu">
+        <div class="menu">
+            <a href="#menu"><img class="menu_logo" src="./imagem/logo.png"></a>
+            <input type="text" class="menu_web_perquisa" placeholder="Busque aqui seu produto">
+            <div class="menu_web">
+                <ul>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                </ul>
+                <svg class="menu_fechar btn" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                <path d="M6.4 18.1 5.9 17.6 11.5 12 5.9 6.4 6.4 5.9 12 11.5 17.6 5.9 18.1 6.4 12.5 12 18.1 17.6 17.6 18.1 12 12.5Z"/>
+                </svg>
+            </div>
+            <div class="mobile">
+                <div class="menu_carinho">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                    <path d="M11 44Q9.8 44 8.9 43.1Q8 42.2 8 41V15Q8 13.8 8.9 12.9Q9.8 12 11 12H16.5V11.5Q16.5 8.35 18.675 6.175Q20.85 4 24 4Q27.15 4 29.325 6.175Q31.5 8.35 31.5 11.5V12H37Q38.2 12 39.1 12.9Q40 13.8 40 15V41Q40 42.2 39.1 43.1Q38.2 44 37 44ZM19.5 11.5V12H28.5V11.5Q28.5 9.6 27.2 8.3Q25.9 7 24 7Q22.1 7 20.8 8.3Q19.5 9.6 19.5 11.5ZM11 41H37Q37 41 37 41Q37 41 37 41V15Q37 15 37 15Q37 15 37 15H31.5V19.5Q31.5 20.15 31.075 20.575Q30.65 21 30 21Q29.35 21 28.925 20.575Q28.5 20.15 28.5 19.5V15H19.5V19.5Q19.5 20.15 19.075 20.575Q18.65 21 18 21Q17.35 21 16.925 20.575Q16.5 20.15 16.5 19.5V15H11Q11 15 11 15Q11 15 11 15V41Q11 41 11 41Q11 41 11 41ZM11 41Q11 41 11 41Q11 41 11 41V15Q11 15 11 15Q11 15 11 15Q11 15 11 15Q11 15 11 15V41Q11 41 11 41Q11 41 11 41Z"/>
+                    </svg>
+                    <div class='carinho_quantidade'>0</div>
+                </div>
+                <div class="menu_mobile btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                    <path d="M6 36V33H42V36ZM6 25.5V22.5H42V25.5ZM6 15V12H42V15Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="menu_carinho_produtos">
+                <h4>Seu Carrinho</h4>
+                <svg class="carinho_fechar" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                    <path d="M6.4 18.1 5.9 17.6 11.5 12 5.9 6.4 6.4 5.9 12 11.5 17.6 5.9 18.1 6.4 12.5 12 18.1 17.6 17.6 18.1 12 12.5Z"/>
+                </svg>
+                <div class="carinho">
+                    <div class="carinho_fileira">
+                        <div class="carinho_img"></div>
+                        <div class="carinho_nome">Senscience Inner Restore Intensif - Máscara Capilar 50ml</div>
+                        <svg class="carinho_remover" xmlns="http://www.w3.org/2000/svg" height="20" width="20">
+                            <path d="M4.125 5.083V3.333H7.062L7.896 2.5H12.104L12.938 3.333H15.875V5.083ZM6.75 17.5Q6.021 17.5 5.51 16.99Q5 16.479 5 15.75V5.958H15V15.75Q15 16.479 14.49 16.99Q13.979 17.5 13.25 17.5Z"/>
+                        </svg>
+                        <div class="carinho_valor">R$ 99.9</div>
+                    </div>
+                </div>
+                <hr>
+                <div class='carinho_valor_total'>Total <span>R$ 0</span></div>
+            </div>
+        </div>
+    </header>
+    <main id="produtos">
+        <div class="produtos_recipiente">
+            <h2>Produtos</h2>
+            <div class="produtos">
+                <div class="produtos_fileira">
+                    <div class="produtor_imagem"></div>
+                    <div class="produtos_nome"></div>
+                    <div class="produtos_valor"></div>
+                    <button class="produtos_carinho">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20">
+                        <path d="M5.083 18.333Q4.354 18.333 3.844 17.823Q3.333 17.312 3.333 16.583V6.75Q3.333 6.021 3.844 5.51Q4.354 5 5.083 5H6.625Q6.646 3.604 7.625 2.635Q8.604 1.667 10 1.667Q11.396 1.667 12.375 2.635Q13.354 3.604 13.375 5H14.917Q15.646 5 16.156 5.51Q16.667 6.021 16.667 6.75V16.583Q16.667 17.312 16.156 17.823Q15.646 18.333 14.917 18.333ZM8.375 5H11.625Q11.604 4.333 11.135 3.875Q10.667 3.417 10 3.417Q9.333 3.417 8.865 3.875Q8.396 4.333 8.375 5ZM5.083 16.583H14.917Q14.917 16.583 14.917 16.583Q14.917 16.583 14.917 16.583V6.75Q14.917 6.75 14.917 6.75Q14.917 6.75 14.917 6.75H13.375V8.375Q13.375 8.729 13.115 8.99Q12.854 9.25 12.5 9.25Q12.146 9.25 11.885 8.99Q11.625 8.729 11.625 8.375V6.75H8.375V8.375Q8.375 8.729 8.115 8.99Q7.854 9.25 7.5 9.25Q7.146 9.25 6.885 8.99Q6.625 8.729 6.625 8.375V6.75H5.083Q5.083 6.75 5.083 6.75Q5.083 6.75 5.083 6.75V16.583Q5.083 16.583 5.083 16.583Q5.083 16.583 5.083 16.583ZM5.083 16.583Q5.083 16.583 5.083 16.583Q5.083 16.583 5.083 16.583V6.75Q5.083 6.75 5.083 6.75Q5.083 6.75 5.083 6.75Q5.083 6.75 5.083 6.75Q5.083 6.75 5.083 6.75V16.583Q5.083 16.583 5.083 16.583Q5.083 16.583 5.083 16.583Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main id="sobre">
+        <div class="sobre">
+            <h3>Sobre</h3>
+            <img class="sobre_imagem" src="./imagem/sobre.png">
+            <p class="sobre_texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </main>
+    <main>
+        <div class="comentarios">
+            <h3>Comentários</h3>
+            <div class="comentarios_mensagens">
+                <button class="comentarios_btn esquerda">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                    <path d="M20 44 0 24 20 4 22.8 6.85 5.65 24 22.8 41.15Z"/>
+                    </svg>
+                </button>
+                <div>
+                    <p class="comentarios_texto">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <h4 class="comentarios_nome">-sdfsodf</h4>
+                </div>
+                <button class="comentarios_btn direita">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                    <path d="M15.2 43.9 12.4 41.05 29.55 23.9 12.4 6.75 15.2 3.9 35.2 23.9Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p class="rodape_texto">Todos direitos reservados.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

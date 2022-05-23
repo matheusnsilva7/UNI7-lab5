@@ -1,0 +1,66 @@
+.comentarios{
+    display:grid;
+    width:300px;
+    margin:0 auto;
+    padding-bottom: 40px;
+}
+.comentarios_mensagens{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    box-shadow: 0px 0px 8px rgb(192, 192, 192);
+    border-radius: 3px;
+    background-color: white;
+    align-items: center;
+    height:300px;
+    justify-content:space-between;
+}
+.comentarios_mensagens div{
+    line-height: 30px;
+    text-align:center;
+}
+.comentarios h3 {
+    margin-bottom: 40px;
+}
+.comentarios h3::after{
+    width: 130px;
+    right: 85px;
+}
+.comentarios_btn{
+    border: none;
+    background: rgba(0,0,0,0);
+    fill: rgb(88, 88, 88);
+    cursor: pointer;
+}
+.direita, .esquerda{
+    padding-left: 15px;
+}
+@media(min-width:700px){
+    .comentarios{
+        width:700px;
+    }
+    .comentarios_mensagens{
+        width:500px;
+        padding:30px 10px;
+        margin:0 auto;
+    }
+    .comentarios h3::after{
+        right: 285px;
+    }
+}
+@media(min-width:1000px){
+    .comentarios{
+        width:980px;
+    }
+    .comentarios_mensagens{
+        width:1000px;
+    }
+    .comentarios h3::after{
+        right: 435px;
+    }
+    .comentarios_mensagens div p {
+        width:600px
+    }
+    .comentarios_btn{
+        padding: 30px;
+    } 
+}

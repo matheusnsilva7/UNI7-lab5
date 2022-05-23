@@ -1,0 +1,134 @@
+main{
+    background-color: #E5E5E5;
+}
+.produtos{
+    width:300px;
+    margin:0 auto;
+}
+.produtos_recipiente{
+    width: 300px;
+    margin: 0 auto;
+    padding: 40px 0 10px 0;
+
+}
+h2{
+    grid-column: span 3;
+    text-align: center;
+    color: #011F26;
+    font-weight: 500;
+    padding-bottom:40px;
+    position:relative;
+}
+h2::after{
+    content: '';
+    position:absolute;
+    bottom:35px;
+    right:115px;
+    width: 74px;
+    height: 5px;
+    background-color: #F24E29;
+}
+.produtos_fileira{
+    margin-bottom:30px;
+    display:grid;
+    align-items: center;
+    grid-template-columns: repeat(3,auto);
+    box-shadow: 0px 0px 8px rgb(192, 192, 192);
+    border-radius: 3px;
+    background-color: white;
+    padding:10px;
+}
+.produtor_imagem{
+    grid-row: span 2;
+    width: 70px;
+    height: 60px;
+    padding-bottom: 100px;
+}
+.produtor_imagem img{
+    width: 70px;
+    height: 80px;
+}
+.produtos_fileira button{
+    border:none;
+    background-color: #013440;
+    border-radius: 5px;
+    fill:white;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+.produtos_nome{
+    grid-column: span 2;
+}
+.produtos_valor{
+    width:150px
+}
+.display{
+    display:none
+}
+@media(min-width:700px){
+    .produtos{
+        width:400px;
+    }
+    .produtos_recipiente{
+        width: 400px;
+    }
+    .produtos_fileira{
+        padding:0px;
+        grid-template-columns: repeat(2,auto);
+        width:400px;
+    }
+    .produtor_imagem{
+        grid-column: span 2;
+        width: 400px;
+        height: 171px;
+        border-radius: 3px 3px 0 0;
+        padding: 0 115px 200px 115px;
+    }
+    .produtor_imagem img {
+        width: 170px;
+        height: 170px;
+    }
+    h2::after{
+        right:164px;
+    }
+    .produtos_nome{
+        grid-column: auto;
+        width:352px;
+        padding: 10px 0px 10px 20px;
+    }
+    .produtos_fileira button{
+        grid-area: 3/2;
+        margin:0px 20px 0px 0px;
+    }
+    .produtos_valor{
+        padding: 5px 0 13px 20px;
+        font-weight: 500;
+    }
+}
+@media (min-width:1000px){
+    .produtos{
+        width:1000px;
+        display: grid;
+        grid-template-columns: repeat(3,320px);
+        gap:20px;
+    }
+    .produtos_recipiente{
+        width: 1000px;
+    }
+    h2::after{
+        right:464px;
+    }
+    .produtos_fileira{
+        width:320px;
+    }
+    .produtor_imagem{
+        width: 310px;
+        height: 150px;
+        padding: 0 75px 200px 75px;
+    }
+    .produtos_nome{
+        width:260px;
+        padding:0px 10px 0px 20px;
+    }
+}
